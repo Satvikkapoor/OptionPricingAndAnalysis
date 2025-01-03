@@ -193,24 +193,6 @@ class MarketDataAnalyzer:
             logger.error(f"Error fetching market price: {e}")
             raise
 
-class RiskAnalyzer:
-    """Calculate various risk metrics"""
-    
-    def __init__(self, price_history: np.ndarray):
-        self.price_history = price_history
-    
-    def calculate_var(self, confidence_level: float = 0.95) -> float:
-        """Calculate Value at Risk"""
-        returns = np.diff(self.price_history) / self.price_history[:-1]
-        return -np.percentile(returns, (1 - confidence_level) * 100)
-    
-    def calculate_expected_shortfall(self, confidence_level: float = 0.95) -> float:
-        """Calculate Expected Shortfall (CVaR)"""
-        returns = np.diff(self.price_history) / self.price_history[:-1]
-        var = self.calculate_var(confidence_level)
-        return -np.mean(returns[returns <= -var])
-
-
 class PriceComparison:
     """Compare simulated vs market option prices"""
     

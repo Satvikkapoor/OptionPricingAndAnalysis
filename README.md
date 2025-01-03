@@ -235,9 +235,9 @@ Where:
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@SatvikKapoor11](https://twitter.com/@SatvikKapoor11) - ksatvik@gmail.com
+[@SatvikKapoor11](https://twitter.com/@SatvikKapoor11) - ksatvik@gmail.com
 
-Project Link: [https://github.com/Satvikkapoor/OptionPricingAndAnalysis](https://github.com/Satvikkapoor/OptionPricingAndAnalysis)
+[OptionPricingAndAnalysis](https://github.com/Satvikkapoor/OptionPricingAndAnalysis)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
